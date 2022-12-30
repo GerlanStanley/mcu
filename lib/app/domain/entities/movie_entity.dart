@@ -2,7 +2,7 @@ class MovieEntity {
   final int id;
   final String title;
   final String overview;
-  final int voteAverage;
+  final double voteAverage;
   final int voteCount;
   final String posterPath;
   final String backdropPath;

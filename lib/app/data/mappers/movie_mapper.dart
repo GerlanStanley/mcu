@@ -10,7 +10,7 @@ class MovieMapper {
       id: json["id"],
       title: json["title"],
       overview: json["overview"],
-      voteAverage: json["vote_average"],
+      voteAverage: json["vote_average"].toDouble(),
       voteCount: json["vote_count"],
       posterPath: json["poster_path"],
       backdropPath: json["backdrop_path"],
