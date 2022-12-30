@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 
+import 'app/presenter/pages/movies/movies.dart';
+import 'core/constants/constants.dart';
+
 void main() {
   runApp(MaterialApp(
-    title: 'Flutter Demo',
-    theme: ThemeData(
-      primarySwatch: Colors.blue,
-    ),
-    home: Container(),
+    title: "MCU",
+    theme: ThemeConstants.dark,
+    home: const MoviesPage(),
   ));
 }

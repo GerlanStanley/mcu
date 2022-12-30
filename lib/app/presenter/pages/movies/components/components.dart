@@ -1,0 +1,1 @@
+export 'list_movies_component.dart';
