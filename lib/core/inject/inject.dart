@@ -6,6 +6,7 @@ import '../../app/domain/use_cases/use_cases.dart';
 import '../../app/data/data_sources/data_sources.dart';
 import '../../app/data/repositories/repositories.dart';
 import '../../app/presenter/blocs/get_movies/get_movies.dart';
+import '../../app/presenter/blocs/selected_movie/selected_movie.dart';
 
 import '../helpers/http/http.dart';
 
@@ -38,6 +39,9 @@ class Inject {
     // blocs
     getIt.registerFactory<GetMoviesBloc>(
       () => GetMoviesBloc(getIt()),
+    );
+    getIt.registerFactory<SelectedMovieBloc>(
+      () => SelectedMovieBloc(),
     );
   }
 }
