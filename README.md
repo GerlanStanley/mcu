@@ -39,13 +39,18 @@ flutter run
 ## ✅ Testes
 Foram implementados testes de unidades, widgets e integração
 
-Para executar os testes realize o comando
+Para executar os testes de unidade e widget realize o comando
 ```
 flutter test
 ```
 
+Para executar os testes de integração realize o comando
+```
+flutter test integration_test
+```
+
 ## 🖼️ Screenshots
 <p float="left">
-    <img src="./screenshots/1.png" width="400" />
-    <img src="./screenshots/2.png" width="400" /> 
+    <img src="./screenshots/1.png" width="300" />
+    <img src="./screenshots/2.png" width="300" /> 
 </p>
