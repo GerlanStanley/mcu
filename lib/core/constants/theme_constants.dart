@@ -40,14 +40,11 @@ class ThemeConstants {
         fontSize: 14,
       ),
     ),
-    listTileTheme: const ListTileThemeData(
-      tileColor: ColorsConstants.backgroundDark,
-    ),
     textTheme: const TextTheme(
       headline1: TextStyle(
         color: ColorsConstants.text,
         fontWeight: FontWeight.bold,
-        fontSize: 14,
+        fontSize: 30,
         fontFamily: "NunitoSans",
       ),
       headline6: TextStyle(
@@ -65,25 +62,25 @@ class ThemeConstants {
       subtitle2: TextStyle(
         color: ColorsConstants.text,
         fontWeight: FontWeight.w700,
-        fontSize: 16,
+        fontSize: 14,
         fontFamily: "NunitoSans",
       ),
       bodyText1: TextStyle(
         color: ColorsConstants.text,
-        fontWeight: FontWeight.w700,
+        fontWeight: FontWeight.normal,
         fontSize: 14,
         fontFamily: "NunitoSans",
       ),
       bodyText2: TextStyle(
-        color: ColorsConstants.text,
+        color: ColorsConstants.textLight,
         fontWeight: FontWeight.normal,
         fontSize: 14,
         fontFamily: "NunitoSans",
       ),
       caption: TextStyle(
-        color: ColorsConstants.textExtraLight,
+        color: ColorsConstants.text,
         fontWeight: FontWeight.normal,
-        fontSize: 16,
+        fontSize: 12,
         fontFamily: "NunitoSans",
       ),
     ),

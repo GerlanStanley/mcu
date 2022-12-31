@@ -3,12 +3,11 @@ import 'package:get_it/get_it.dart';
 
 import '../../app/domain/repositories/repositories.dart';
 import '../../app/domain/use_cases/use_cases.dart';
-import '../../app/external/data_sources/data_sources.dart';
-import '../../app/infra/data_sources/data_sources.dart';
-import '../../app/infra/repositories/repositories.dart';
-import '../../app/presenter/blocs/financial_asset/financial_asset.dart';
+import '../../app/data/data_sources/data_sources.dart';
+import '../../app/data/repositories/repositories.dart';
+import '../../app/presenter/blocs/get_movies/get_movies.dart';
+import '../../app/presenter/blocs/selected_movie/selected_movie.dart';
 
-import '../../app/presenter/blocs/variation/variation.dart';
 import '../helpers/http/http.dart';
 
 class Inject {
@@ -23,23 +22,26 @@ class Inject {
     );
 
     // dataSources
-    getIt.registerLazySingleton<FinancialAssetDataSource>(
-      () => FinancialAssetDataSourceImpl(getIt()),
+    getIt.registerLazySingleton<MovieDataSource>(
+      () => MovieDataSourceImpl(getIt()),
     );
 
     // repositories
-    getIt.registerLazySingleton<FinancialAssetRepository>(
-      () => FinancialAssetRepositoryImpl(getIt()),
+    getIt.registerLazySingleton<MovieRepository>(
+      () => MovieRepositoryImpl(getIt()),
     );
 
     // useCases
-    getIt.registerLazySingleton<SearchFinancialAssetsUseCase>(
-      () => SearchFinancialAssetsUseCaseImpl(getIt()),
+    getIt.registerLazySingleton<GetMoviesUseCase>(
+      () => GetMoviesUseCaseImpl(getIt()),
     );
 
     // blocs
-    getIt.registerLazySingleton<FinancialAssetBloc>(
-      () => FinancialAssetBloc(getIt()),
+    getIt.registerFactory<GetMoviesBloc>(
+      () => GetMoviesBloc(getIt()),
+    );
+    getIt.registerFactory<SelectedMovieBloc>(
+      () => SelectedMovieBloc(),
     );
   }
 }
