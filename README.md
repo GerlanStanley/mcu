@@ -51,6 +51,6 @@ flutter test integration_test
 
 ## 🖼️ Screenshots
 <p float="left">
-    <img src="./screenshots/1.png" width="300" />
+    <img src="./screenshots/1.png" width="300" style="padding: 15px" />
     <img src="./screenshots/2.png" width="300" /> 
 </p>
