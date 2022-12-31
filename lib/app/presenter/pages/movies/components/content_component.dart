@@ -72,6 +72,7 @@ class ContentComponent extends StatelessWidget {
                         bottom: 40,
                       ),
                       child: Text(
+                        key: const Key("movie_title"),
                         state.movie.title.toUpperCase(),
                         style: Theme.of(context).textTheme.headline1,
                       ),

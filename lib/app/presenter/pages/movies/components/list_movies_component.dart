@@ -32,6 +32,7 @@ class ListMoviesComponent extends StatelessWidget {
             itemBuilder: (context, index) {
               var movie = movies[index];
               return Container(
+                key: Key("movie_$index"),
                 width: height / 1.5,
                 padding: const EdgeInsets.only(left: 8, right: 8),
                 child: ListMoviesItemComponent(
